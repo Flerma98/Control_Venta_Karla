@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialogocurvo"
+    android:layout_margin="15dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="-Nuevo Cliente-"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#808080"
+            android:id="@+id/tilUsuario"
+            android:hint="Ingresa tu Usuario">
+
+            <EditText
+                android:id="@+id/txt_login_Usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:drawableLeft="@drawable/ic_usuario"
+                android:drawablePadding="5dp"
+                android:maxLength="30"
+                android:textSize="18sp"
+                android:inputType="textEmailAddress"
+                android:paddingTop="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
